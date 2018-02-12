@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import NavBar from './NavBar';
-import Keg from './Keg';
+import KegList from './KegList';
 import Error404 from './Error404';
 import About from './About';
 import Contact from './Contact';
@@ -21,7 +21,7 @@ function App(){
       <Header/>
       <About/>
       <Switch>
-        <Route path = '/kegs' component = {Keg} />
+        <Route path = '/kegs' component = {KegList} />
         <Route path = '/contact' component = {Contact} />
         <Route component = {Error404} />
       </Switch>
