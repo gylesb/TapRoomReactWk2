@@ -7,22 +7,16 @@ function NavBar(){
       padding: '10px',
       textAlign: 'center',
       backgroundColor: '#3CC6FF',
-      borderWidth: '2px',
-      borderColor: 'black',
-      borderStyle: 'solid',
-      borderRadius: '5px'
+      borderRadius: '20px'
     }}>
-      <div className="col-md-3">
+      <div className="col-md-4">
         <a href='/'>Home</a>
       </div>
-      <div className="col-md-3">
+      <div className="col-md-4">
         <a href='/#/kegs'>View Kegs</a>
       </div>
-      <div className="col-md-3">
-        <a href='/#/edit'>Edit Kegs</a>
-      </div>
-      <div className="col-md-3">
-        <a href='/#/new'>New Kegs</a>
+      <div className="col-md-4">
+        <a href='/#/contact'>Contact</a>
       </div>
     </div>
   );
