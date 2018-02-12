@@ -2,6 +2,10 @@ import React from 'react';
 import Header from './Header';
 import NavBar from './NavBar';
 import KegList from './KegList';
+import Error404 from './Error404';
+import About from './About';
+import Contact from './Contact';
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
@@ -15,7 +19,12 @@ function App(){
       `}</style>
       <NavBar/>
       <Header/>
-      <KegList/>
+      <About/>
+      <Switch>
+        <Route path = '/kegs' component = {Keg} />
+        <Route path = '/contact' component = {Contact} />
+        <Route component = {Error404} />
+      </Switch>
     </div>
   );
 }
