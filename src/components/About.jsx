@@ -1,16 +1,18 @@
 import React from 'react';
 
 function About() {
-  <div style={{
-    borderStyle: 'solid',
-    borderWidth: '2px',
-    borderColor: 'black',
-    padding: '40px'
-  }}>
-    <div className = 'row'>
-      <p>Welcome to The Epicodus Brewery!</p>
+  return (
+    <div style={{
+      borderStyle: 'solid',
+      borderWidth: '2px',
+      borderColor: 'black',
+      padding: '40px'
+    }}>
+      <div className = 'row'>
+        <p>Welcome to The Epicodus Brewery!</p>
+      </div>
     </div>
-  </div>;
+  );
 }
 
 export default About;
