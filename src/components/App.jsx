@@ -16,8 +16,6 @@ function App(){
       <NavBar/>
       <Header/>
       <KegList/>
-      <Switch >
-      </Switch>
     </div>
   );
 }

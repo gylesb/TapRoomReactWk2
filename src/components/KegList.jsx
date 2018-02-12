@@ -1,5 +1,5 @@
 import React from 'react';
-import Keg from 'Keg';
+import Keg from './Keg';
 
 
 
@@ -17,7 +17,7 @@ const masterList = [
     alc: '5.40'
   },
   {
-    name: 'Mannys Pale Ale'
+    name: 'Mannys Pale Ale',
     brand: 'Mannys',
     price: '140',
     alc: '5.40'
@@ -33,20 +33,20 @@ const masterList = [
 function KegList(){
   return (
     <div style={{padding: '15px'}}>
-  <h2 style={{color: '#206040'}}>Kegs</h2>
-  <div className="row">
-    {masterSchedule.map((KegList, index) =>
-      <div className="col-md-4">
-        <Schedule
-          name={scheduleList.name}
-          brand={scheduleList.brand}
-          price={scheduleList.price}
-          alc={scheduleList.alc}
-          key={index}/>
+      <h2 style={{color: '#206040'}}>Kegs</h2>
+      <div className="row">
+        {masterList.map((kegList, index) =>
+          <div className="col-md-4">
+            <Keg
+              name={kegList.name}
+              brand={kegList.brand}
+              price={kegList.price}
+              alc={kegList.alc}
+              key={index}/>
+          </div>
+        )}
       </div>
-    )}
-  </div>
-</div>
+    </div>
 
   );
 }

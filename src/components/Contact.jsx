@@ -3,8 +3,7 @@ import React from 'react';
 
 
 
-
-function Contact(props){
+function Contact(){
   return (
     <div style={{borderStyle: 'solid',
       borderWidth: '2px',
@@ -13,7 +12,7 @@ function Contact(props){
       <p style={{fontSize: '40px'}}><strong>Contact Us!</strong></p>
 
     </div>
-  )
+  );
 }
 
 export default Contact;
