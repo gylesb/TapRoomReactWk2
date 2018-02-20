@@ -57,16 +57,16 @@ function KegList(props){
     <div style = {{padding: '15px'}}>
       <h2 style = {{color: '#206040'}}>Kegs</h2>
       <div className = "row">
-        {props.kegList.map((ticket) =>
+        {props.kegList.map((keg) =>
           <Keg names = {keg.name}
             brand = {keg.brand}
             price = {keg.brand}
             alc = {keg.brand}
-            key = {keg.id}
+            key = {keg.id}/>
         )}
       </div>
     </div>
-  )
+  );
 }
 
 KegList.propTypes = {
