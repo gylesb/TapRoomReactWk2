@@ -13,7 +13,7 @@ function NavBar(){
         <a href='/#/about'>Home</a>
       </div>
       <div className="col-md-4">
-        <a href='/#/kegs'>View Kegs</a>
+        <a href='/#/newkeg'>Add Keg</a>
       </div>
       <div className="col-md-4">
         <a href='/#/contact'>Contact</a>

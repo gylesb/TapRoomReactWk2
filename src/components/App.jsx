@@ -22,7 +22,8 @@ function App(){
       <Header/>
       <About/>
       <Switch>
-        <Route path = '/kegs' component = {KegList} />
+        <Route exact path = '/' render = {() => <KegList kegList = {this.state.masterList} />} />
+        <Route path = '/newkeg' render = {() => <NewKegControl onNewKegCreation = {this.handleAddingNewKegToList} />} />
         <Route path = '/contact' component = {Contact} />
         <Route component = {Error404} />
       </Switch>

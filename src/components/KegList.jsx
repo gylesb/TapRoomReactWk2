@@ -67,11 +67,11 @@ function KegList(props){
       </div>
     </div>
   );
+}
 
-
-  KegList.propTypes = {
-    kegList: PropTypes.array
-  };
+KegList.propTypes = {
+  kegList: PropTypes.array
+};
 
 
 export default KegList;
