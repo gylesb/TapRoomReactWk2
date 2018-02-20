@@ -6,6 +6,7 @@ import Error404 from './Error404';
 import About from './About';
 import Contact from './Contact';
 import { Switch, Route } from 'react-router-dom';
+import NewKegControl from './NewKegControl';
 
 function App(){
   return (
