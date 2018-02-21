@@ -12,7 +12,32 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterList: []
+      masterList: [
+        {
+          name: 'Guiness Draught',
+          brand: 'Guiness',
+          price: '205',
+          alc: '4.20'
+        },
+        {
+          name: 'Blue Moon - Belgian White',
+          brand: 'Blue Moon',
+          price: '150',
+          alc: '5.40'
+        },
+        {
+          name: 'Mannys Pale Ale',
+          brand: 'Mannys',
+          price: '140',
+          alc: '5.40'
+        },
+        {
+          name: 'Deschutes IPA',
+          brand: 'Deschutes',
+          price: '190',
+          alc: '7.00'
+        }
+      ]
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
   }
@@ -35,7 +60,7 @@ class App extends React.Component {
         <NavBar/>
         <Header/>
         <Switch>
-          <Route exact path = '/' render = {() => <KegList kegList = {this.state.masterList} />} />
+          <Route exact path = '/' render = {() => <KegList masterList = {this.state.masterList} />} />
           <Route path = '/newkeg' render = {() => <NewKegControl onNewKegCreation = {this.handleAddingNewKegToList} />} />
           <Route path = '/contact' component = {Contact} />
           <Route component = {Error404} />

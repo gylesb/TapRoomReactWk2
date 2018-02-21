@@ -3,34 +3,6 @@ import Keg from './Keg';
 import PropTypes from 'prop-types';
 
 
-
-// const masterList = [
-//   {
-//     name: 'Guiness Draught',
-//     brand: 'Guiness',
-//     price: '205',
-//     alc: '4.20'
-//   },
-//   {
-//     name: 'Blue Moon - Belgian White',
-//     brand: 'Blue Moon',
-//     price: '150',
-//     alc: '5.40'
-//   },
-//   {
-//     name: 'Mannys Pale Ale',
-//     brand: 'Mannys',
-//     price: '140',
-//     alc: '5.40'
-//   },
-//   {
-//     name: 'Deschutes IPA',
-//     brand: 'Deschutes',
-//     price: '190',
-//     alc: '7.00'
-//   },
-// ];
-//
 // function KegList(){
 //   return (
 //     <div style={{padding: '15px'}}>
@@ -58,11 +30,11 @@ function KegList(props){
       <hr/>
       <h2 style = {{color: '#206040'}}>Kegs</h2>
       <div className = "row">
-        {props.kegList.map((keg) =>
+        {props.masterList.map((keg) =>
           <Keg names = {keg.name}
             brand = {keg.brand}
-            price = {keg.brand}
-            alc = {keg.brand}
+            price = {keg.price}
+            alc = {keg.alc}
             key = {keg.id}/>
         )}
       </div>
