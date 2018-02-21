@@ -55,6 +55,7 @@ import PropTypes from 'prop-types';
 function KegList(props){
   return (
     <div style = {{padding: '15px'}}>
+      <hr/>
       <h2 style = {{color: '#206040'}}>Kegs</h2>
       <div className = "row">
         {props.kegList.map((keg) =>

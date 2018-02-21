@@ -36,17 +36,17 @@ function NewKegForm(props) {
           type = 'text'
           id = 'brand'
           placeholder = "Brand of Beer"
-          ref = {(input) => {_name = input;}}/>
+          ref = {(input) => {_brand = input;}}/>
         <input
           type = 'number'
           id = 'price'
           placeholder = "Price of Beer"
-          ref = {(input) => {_name = input;}}/>
+          ref = {(input) => {_price = input;}}/>
         <input
           type = 'text'
           id = 'alc'
           placeholder = "Alcohol Percentage"
-          ref = {(input) => {_name = input;}}/>
+          ref = {(input) => {_alc = input;}}/>
         <button type = 'submit'>Insert New Keg</button>
       </form>
     </div>
