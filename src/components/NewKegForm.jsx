@@ -9,7 +9,7 @@ function NewKegForm(props) {
   let _alc = null;
 
   function handleNewKegFormSubmission(event) {
-    event.PreventDefault();
+    event.preventDefault();
 
     props.onNewKegCreation({
       name: _name.value,
