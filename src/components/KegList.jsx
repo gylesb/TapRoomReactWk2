@@ -31,7 +31,7 @@ function KegList(props){
       <h2 style = {{color: '#206040'}}>Kegs</h2>
       <div className = "row">
         {props.masterList.map((keg) =>
-          <Keg names = {keg.name}
+          <Keg name = {keg.name}
             brand = {keg.brand}
             price = {keg.price}
             alc = {keg.alc}
