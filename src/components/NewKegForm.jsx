@@ -40,7 +40,7 @@ function NewKegForm(props) {
         <input
           type = 'number'
           id = 'price'
-          placeholder = "Price of Beer"
+          placeholder = "Price of Keg"
           ref = {(input) => {_price = input;}}/>
         <input
           type = 'text'

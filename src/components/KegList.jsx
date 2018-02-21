@@ -43,7 +43,7 @@ function KegList(props){
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.array
+  masterList: PropTypes.array
 };
 
 
