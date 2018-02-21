@@ -3,7 +3,6 @@ import Header from './Header';
 import NavBar from './NavBar';
 import KegList from './KegList';
 import Error404 from './Error404';
-import About from './About';
 import Contact from './Contact';
 import { Switch, Route } from 'react-router-dom';
 import NewKegControl from './NewKegControl';
@@ -35,7 +34,7 @@ class App extends React.Component {
             `}</style>
         <NavBar/>
         <Header/>
-        <About/>
+        <KegList/>
         <Switch>
           <Route exact path = '/' render = {() => <KegList kegList = {this.state.masterList} />} />
           <Route path = '/newkeg' render = {() => <NewKegControl onNewKegCreation = {this.handleAddingNewKegToList} />} />

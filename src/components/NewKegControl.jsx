@@ -10,7 +10,7 @@ class NewKegControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleNewKegConfirmation = this.handleNewKegConfirmation.bund(this);
+    this.handleNewKegConfirmation = this.handleNewKegConfirmation.bind(this);
   }
 
   handleNewKegConfirmation() {

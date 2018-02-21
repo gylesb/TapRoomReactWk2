@@ -10,7 +10,7 @@ function NavBar(){
       borderRadius: '20px'
     }}>
       <div className="col-md-4">
-        <a href='/#/about'>Home</a>
+        <a href='/#/'>Home</a>
       </div>
       <div className="col-md-4">
         <a href='/#/newkeg'>Add Keg</a>
