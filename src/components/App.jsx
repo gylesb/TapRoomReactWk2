@@ -34,7 +34,6 @@ class App extends React.Component {
             `}</style>
         <NavBar/>
         <Header/>
-        <KegList/>
         <Switch>
           <Route exact path = '/' render = {() => <KegList kegList = {this.state.masterList} />} />
           <Route path = '/newkeg' render = {() => <NewKegControl onNewKegCreation = {this.handleAddingNewKegToList} />} />
